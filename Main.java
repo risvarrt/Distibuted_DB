@@ -79,11 +79,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String url1 = "jdbc:mysql://34.118.189.0:3306/Event_management";
-        String url2 = "jdbc:mysql://104.154.29.3:3306/Event_management_confidential";
+        String url1 = "jdbc:mysql://{Ipaddress}/Event_management";
+        String url2 = "jdbc:mysql://{Ipaddress}/Event_management_confidential";
 
-        String user = "5408";
-        String password = "3T%MA?4q9^6aR?ak";
+        String user = "{user}";
+        String password = "{password}";
 
         try {
             // Load and register the JDBC driver
