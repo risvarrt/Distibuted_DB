@@ -50,7 +50,7 @@ public class Main {
         // get all tables from gdc (global database catalog) where speakerID is used
         String url = "jdbc:mysql://" + gdc.getDatabases().get("Event_management_confidential").getServerURL() + ":3306/Event_management_confidential";
         System.out.println(url);
-        Connection conn = DriverManager.getConnection(url, "5408", "3T%MA?4q9^6aR?ak");
+        Connection conn = DriverManager.getConnection(url, "user", "password");
         int speakerID = getSpeakerID(conn, name);
         conn.close();
         if (speakerID == -1) {
@@ -60,7 +60,7 @@ public class Main {
         for (Map.Entry<String, MyPojo.Database> entry : gdc.getDatabases().entrySet()) {
             MyPojo.Database db = entry.getValue();
             url = "jdbc:mysql://" + db.getServerURL() + ":3306/" + entry.getKey();
-            conn = DriverManager.getConnection(url, "5408", "3T%MA?4q9^6aR?ak");
+            conn = DriverManager.getConnection(url, "user", "password");
             for (Map.Entry<String, List<String>> table : db.getTables().entrySet()) {
                 List<String> columns = table.getValue();
                 for (String column : columns) {
