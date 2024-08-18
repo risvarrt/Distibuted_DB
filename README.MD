@@ -21,8 +21,6 @@ The Event Management System (EMS) Database is designed to streamline the plannin
 
 ## Database Architecture
 
-   ![ERD](assets/Final_ERD.png)
-
 ### Fragmentation and Distributed Database Approach
 
 The Event Management System employs a distributed database architecture to manage data efficiently and securely. The system is divided into two main databases with a specific fragmentation strategy to enhance performance and security:
@@ -55,7 +53,7 @@ The Event Management System employs a distributed database architecture to manag
 
 ### ERD (Entity-Relationship Diagram)
 
-- **[Insert ERD Here]**
+- ![ERD](assets/Final_ERD.png)
 
 ### Example Fragmentation
 
